@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-container {
+    background-image: url('../Assets/MHome.png'); /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 20vh; /* Adjust the height as needed */
+    width: 100%;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    background-color: transparent; /* Transparent to show the gradient */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #d1d1d1; /* Gray line between header and navigation */
+    padding: 10px 20px; /* Padding for spacing */
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-align: center;
+    flex: 1; /* Allow the logo to take up available space */
+    color: #000000; /* Black color for the logo text */
+  }
+  
+  .logo-nav {
+    height: 70px; /* Adjust the height as needed */
+  }
+  
+  .login-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Position the login button on the right */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  /* Navigation Section Styles */
+  .navigation {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Rounded corners for a softer look */
+    margin: 5px auto; /* Center the navigation box horizontally */
+    border-bottom: 1px solid #d1d1d1; /* Gray line between navigation and home section */
+    width: 80%; /* Customize the width */
+    max-width: 1200px; /* Set a max width for larger screens */
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Reduce spacing between navigation items */
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    position: relative; /* For dropdown or hover effects */
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #000000; /* Black color for the text */
+    font-size: 18px; /* Slightly larger font size for readability */
+    padding: 8px 12px;
+    border-radius: 12px; /* Rounded edges on the links */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .navigation ul li a:hover {
+    background-color: #d1e7ff; /* Light blue background on hover */
+    color: #000000; /* Keep text color black on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+  }
+  
+  .navigation ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #000000; /* Black underline color */
+    transition: width 0.3s ease; /* Smooth underline transition */
+  }
+  
+  .navigation ul li a:hover::after {
+    width: 100%; /* Expand underline on hover */
+  }
+  
+  /* Chatbox Styles */
+  .Chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px; /* Adjust as needed */
+  }
+  

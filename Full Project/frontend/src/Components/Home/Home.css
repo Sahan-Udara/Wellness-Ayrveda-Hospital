@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.home-container1 {
+  background-image: url('../Assets/MHome.png'); /* Set background image */
+  background-size: cover; /* Make sure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100vh; /* Adjust the height as needed */
+  width: 100%;
+}
+
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;
+
+  background-color: transparent; /* Transparent to show the gradient */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #d1d1d1; /* Gray line between header and navigation */
+}
+
+.logo {
+  font-size: 24px;
+  text-align: center;
+  flex: 1; /* Allow the logo to take up available space */
+  color: #000000; /* Black color for the logo text */
+}
+
+.logo-nav {
+  background-size: cover; /* Make sure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 70px; /* Adjust the height as needed */
+}
+
+.login-btn1 {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Position the login button on the right */
+}
+
+/* Navigation Section Styles */
+.navigation {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Light pink background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; /* Rounded corners for a softer look */
+  margin: 5px auto; /* Center the navigation box horizontally */
+  border-bottom: 1px solid #d1d1d1; /* Gray line between navigation and home section */
+  width: 80%; /* Customize the width */
+  max-width: 1200px; /* Set a max width for larger screens */
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Reduce spacing between navigation items for a tighter look */
+  margin: 0;
+}
+
+.navigation ul li {
+  position: relative; /* For dropdown or hover effects */
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #000000; /* Black color for the text */
+  font-size: 18px; /* Slightly larger font size for readability */
+  padding: 8px 12px;
+  border-radius: 12px; /* Rounded edges on the links */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navigation ul li a:hover {
+  background-color: #d1e7ff; /* Light blue background on hover */
+  color: #000000; /* Keep text color black on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.navigation ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #000000; /* Black underline color */
+  transition: width 0.3s ease; /* Smooth underline transition */
+}
+
+.navigation ul li a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+
+
+
+
+
+/* Home Section Styles */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: transparent; /* Transparent to show the gradient */
+}
+
+.home-content {
+  max-width: 50%;
+  color: #000000; /* Black color for the main content text */
+}
+
+.home-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.appointment-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.doctor-images {
+  display: flex;
+  gap: 20px;
+}
+
+.doctor-images img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Doc-1 {
+  margin-bottom: 50px;
+}
+
+.Doc-2 {
+  margin-top: 50px;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #d1d1d1; /* Gray line between home section and footer */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.logo-footer-Text {
+  font-size: 24px;
+  margin-top: -50px;
+  color: #000000; /* Black color for the footer logo text */
+}
+
+.logo-footer {
+  background-size: cover; /* Make sure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100px; /* Adjust the height as needed */
+}
+
+.quick-links{
+  margin-left: 1px;
+}
+.footer-content h4 {
+  color: #000000; /* Black color for the footer section headings */
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: #000000; /* Black color for footer links */
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-right: 1800px;
+}
+
+.social-media a {
+  color: #000; /* Adjust the color as needed */
+}
+
+.social-media a:hover {
+  color: #0073e6; /* Adjust the hover color as needed */
+}
+
+.copy-right {
+  text-align: center;
+  /*margin: 10px;*/
+  font-size: 15px;
+}

@@ -1,0 +1,40 @@
+/* Nav.css */
+.nav-container {
+  background-color: #000000; /* Black background color */
+  padding: 10px; /* Padding around the navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for a modern look */
+  border-radius: 8px; /* Rounded corners */
+  height: 30px; /* Low height for the nav bar */
+}
+
+.home-ul {
+  list-style-type: none; /* Remove default bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-around; /* Evenly space out the items */
+  align-items: center; /* Center items vertically */
+}
+
+.home-li {
+  margin: 0 10px; /* Small margin around list items */
+}
+
+.home-a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* White color for the text */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold font */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.home-a:hover {
+  color: #bbbbbb; /* Slightly lighter shade on hover */
+}
+
+.home-li h1 {
+  font-size: 24px; /* Small font size for titles */
+  margin: 0; /* Remove default margin */
+  font-weight: bold; /* Bold font */
+  color: #ffffff; /* White color for the text */
+}

@@ -1,0 +1,96 @@
+/* General layout for PDF-sized display */
+.doctor-detail-container {
+    margin: 0 auto;
+    padding: 40px;
+    width: 210mm; /* A4 paper width */
+    min-height: 297mm; /* A4 paper height */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .doctor-detail-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14pt;
+  }
+  
+  .form-group span {
+    color: #666;
+    font-size: 12pt;
+  }
+  
+  /* Button alignment */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  /* Small and cute button styling */
+  .btn-update, .btn-delete {
+    padding: 8px 15px; /* Smaller padding */
+    font-size: 10pt; /* Smaller font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: auto; /* Auto-width for small buttons */
+  }
+  
+  .btn-update {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  /* Hover effects */
+  .btn-update:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-delete:hover {
+    background-color: #e53935;
+  }
+  
+  /* Print styling for PDF */
+  @media print {
+    .doctor-detail-container {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+      background-color: #fff;
+    }
+  
+    .form-group {
+      page-break-inside: avoid;
+    }
+  
+    .form-actions {
+      page-break-inside: avoid;
+    }
+  }
+  

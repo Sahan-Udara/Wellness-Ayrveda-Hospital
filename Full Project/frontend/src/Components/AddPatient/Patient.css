@@ -1,0 +1,145 @@
+/* General Container */
+.patient-form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.patient-form-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #34495e;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+  outline: none;
+}
+
+/* Error Input Style */
+.input-error {
+  border-color: #e74c3c !important;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* Button Styles */
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2ecc71;
+}
+
+.submit-btn:active {
+  background-color: #1e8449;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+  .patient-form-container {
+    padding: 20px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Enhancing visual feedback for buttons */
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+}
+
+/* Footer (if needed) */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #bdc3c7;
+}
+
+/* Form layout styling */
+.patient-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-form input[type="text"],
+.patient-form input[type="email"],
+.patient-form input[type="date"],
+.patient-form input[type="number"],
+.patient-form select {
+  width: 100%;
+}
+
+/* Enhanced Select Dropdown */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23495f77" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+

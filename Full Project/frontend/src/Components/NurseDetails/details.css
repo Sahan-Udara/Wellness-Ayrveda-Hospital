@@ -1,0 +1,81 @@
+/* Report Table Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('../Assets/MHome.png'); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+}
+.nurse-detail-report {
+    width: 95% ;
+    margin: 20px auto ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .report-table th,
+  .report-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .report-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .report-table td {
+    background-color: #fafafa;
+  }
+  
+  .report-actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .report-actions .btn-update,
+  .report-actions .btn-delete {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-update {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-update:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  

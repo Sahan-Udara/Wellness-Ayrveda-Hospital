@@ -1,0 +1,168 @@
+/* Patientdetails.css */
+
+/* Global styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.patient-details-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a3f54;
+  margin-bottom: 20px;
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #d9dde2;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2a3f54;
+}
+
+/* Action buttons */
+.action-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  background-color: #2a3f54;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #1d2d41;
+}
+
+/* Table styling */
+.patient-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.patient-details-table th,
+.patient-details-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #d9dde2;
+  font-size: 0.9rem;
+}
+
+.patient-details-table th {
+  background-color: #2a3f54;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.patient-details-table th:hover {
+  background-color: #1d2d41;
+}
+
+.patient-details-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.patient-details-table tr:hover {
+  background-color: #eef1f5;
+}
+
+/* Table cell actions */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.update-button,
+.delete-button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.update-button:hover {
+  background-color: #45a047;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-input {
+    width: 100%;
+  }
+
+  .patient-details-container {
+    padding: 15px;
+  }
+
+  .patient-details-table th,
+  .patient-details-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .patient-details-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .patient-details-table th,
+  .patient-details-table td {
+    padding: 6px;
+    font-size: 0.75rem;
+  }
+}
